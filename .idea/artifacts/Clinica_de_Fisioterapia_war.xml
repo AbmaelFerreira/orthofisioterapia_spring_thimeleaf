@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Clinica_de_Fisioterapia:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Clinica_de_Fisioterapia</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="orthofisio.war">
+      <element id="artifact" artifact-name="Clinica_de_Fisioterapia:war exploded" />
+    </root>
+  </artifact>
+</component>
