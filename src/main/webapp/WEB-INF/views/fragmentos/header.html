@@ -1,0 +1,47 @@
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://www.thymeleaf.org">
+    <div class="container" th:fragment="cabecalho">
+        <nav class="navbar bg-inverse navbar-dark"> <!--Nav bar-->
+            <a href="#" class="navbar-brand">
+                <img src="" style="width:40px; height: auto;" class="d-inline-block aline-top"> Orto Fisio
+            </a>
+            <!--assets\img\fisioterapia_interna.png-->
+            <button
+                    class="navbar-toggler hidden-md-up float-sm-right float-xs-right"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#menu-sanduiche">
+            </button>
+
+            <div class="collapse navbar-toggleable-sm" id="menu-sanduiche">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">A Empresa</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Portifólio</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Serviços</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Web Site</a>
+                            <a href="#" class="dropdown-item">Sistema Web</a>
+                            <a href="#" class="dropdown-item">Blogs</a>
+                            <a href="#" class="dropdown-item">E-commerce</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <form class="form-inline float-md-right float-sm-left float-xs-left">
+                    <input type="text"  class="form-control" placeholder="Digite a pesquisa ..."/>
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</html>
