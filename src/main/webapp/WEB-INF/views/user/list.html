@@ -1,8 +1,35 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
-    <div class="container" th:fragment="corpo">
-        <h1 th:text="#{titulo.listagem}"></h1>
+
+
+<div class="container" th:fragment="corpo">
+    <div id="carouselSite" class="carousel slider" data-ride="carousel" >
+        <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                        <img th:attr="src=@{/static/img/img2.jpg}"  class="img-fluid d-block"  >
+                </div>
+
+                <div class="carousel-item">
+                    <img th:attr="src=@{/static/img/img3.jpg}"  class="img-fluid d-block">
+                </div>
+        </div>
+
+        <a class="carousel-control-prev" th:href="@{#carouselSite}" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+
+        <a class="carousel-control-next" th:href="@{#carouselSite}" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Avançar</span>
+        </a>
+        
+    </div>
+
+    <!--
+    <h1 th:text="#{titulo.listagem}"></h1>
         <hr>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -63,4 +90,6 @@
             </table>
         </div>
     </div>
+
+-->
 </html>
